@@ -6,13 +6,6 @@
 -->
 <html>
 
-<script type="text/javascript">
-	var userLang = navigator.language || navigator.userLanguage;
-	if (userLang !== "fr") {
-		window.open("index.html", "_self")
-	}
-</script>
-
 <head>
 	<title>Sébastien Dolard</title>
 	<meta charset="utf-8" />
@@ -22,6 +15,8 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<link rel="stylesheet" href="assets/css/jesterBox.css" />
+	<link rel="stylesheet" href="flag-icon-css-2.9.0/css/flag-icon.min.css" />
+	<link rel="stylesheet" href="assets/css/w3.css" />
 </head>
 
 <body>
@@ -29,10 +24,21 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">Haut</a></li>
-			<li><a href="#work">Profession</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li>
+				<a href="#top">Haut</a>
+			</li>
+			<li>
+				<a href="#work">Profession</a>
+			</li>
+			<li>
+				<a href="#portfolio">Portfolio</a>
+			</li>
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+			<li>
+				<a href="index.html"><span class="flag-icon flag-icon-us w3-margin-right"></span>Read in English</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -41,14 +47,19 @@
 		<article class="container" id="top">
 			<div class="row">
 				<div class="4u 12u(mobile)">
-					<span class="image fit"><img src="images/sebastien.dolard-682x682.png" alt="" /></span>
+					<span class="image fit">
+						<img src="images/sebastien.dolard-682x682.png" alt="" />
+					</span>
 				</div>
 				<div class="8u 12u(mobile)">
 					<header>
-						<h1>Bonjour, je suis <strong>Sébastien Dolard.</strong></h1>
+						<h1>Bonjour, je suis
+							<strong>Sébastien Dolard.</strong>
+						</h1>
 					</header>
-					<p>Je suis spécialisé dans l'industrialisation de logiciels, essentiellement dans le domaine de la sécurité des réseaux. J'organise et priorise des développements pour sortir en temps et en heure des produits de qualité et cohérents avec les exigences
-						des clients. Je suis le référent technique de la connaissance des produits.</p>
+					<p>Je suis spécialisé dans l'industrialisation de logiciels, essentiellement dans le domaine de la sécurité des réseaux.
+						J'organise et priorise des développements pour sortir en temps et en heure des produits de qualité et cohérents avec
+						les exigences des clients. Je suis le référent technique de la connaissance des produits.</p>
 					<a href="#work" class="button big scrolly">En savoir plus sur ce que je fais</a>
 				</div>
 			</div>
@@ -143,9 +154,15 @@
 
 	<!-- Portfolio -->
 	<a href="#JesterBox" class="JesterBox">
-		<div id="SMC"><img src="images/SMC_vpn.png"></div>
-		<div id="SVC"><img src="images/SVC.png"></div>
-		<div id="SNS_UI"><img src="images/SNS_WEB_UI.png"></div>
+		<div id="SMC">
+			<img src="images/SMC_vpn.png">
+		</div>
+		<div id="SVC">
+			<img src="images/SVC.png">
+		</div>
+		<div id="SNS_UI">
+			<img src="images/SNS_WEB_UI.png">
+		</div>
 	</a>
 	<div class="wrapper style3">
 		<article id="portfolio">
@@ -157,22 +174,37 @@
 				<div class="row">
 					<div class="4u 12u(mobile)">
 						<article class="box style2">
-							<a href="#SMC" class="image featured"><img src="images/SMC_vpn.png" alt="" /></a>
-							<h3><a href="#SMC">SMC</a></h3>
-							<p>SMC est une console d'administration centralisée qui permet de configurer, diagnostiquer et surveiller une flotte de pare-feu SNS</p>
+							<a href="#SMC" class="image featured">
+								<img src="images/SMC_vpn.png" alt="" />
+							</a>
+							<h3>
+								<a href="#SMC">SMC</a>
+							</h3>
+							<p>SMC est une console d'administration centralisée qui permet de configurer, diagnostiquer et surveiller une flotte
+								de pare-feu SNS</p>
 						</article>
 					</div>
 					<div class="4u 12u(mobile)">
 						<article class="box style2">
-							<a href="#SVC" class="image featured"><img src="images/SVC.png" alt="" /></a>
-							<h3><a href="#SVC">SVC</a></h3>
-							<p>Basé sur ELK, Stormshield Visibility Center est une solution qui offre une présentation unifiée des événements de sécurité provenant de toutes les gammes de produits Stormshield. Vous obtenez un aperçu de la sécurité de votre infrastructure et de vos données.</p>
+							<a href="#SVC" class="image featured">
+								<img src="images/SVC.png" alt="" />
+							</a>
+							<h3>
+								<a href="#SVC">SVC</a>
+							</h3>
+							<p>Basé sur ELK, Stormshield Visibility Center est une solution qui offre une présentation unifiée des événements de
+								sécurité provenant de toutes les gammes de produits Stormshield. Vous obtenez un aperçu de la sécurité de votre infrastructure
+								et de vos données.</p>
 						</article>
 					</div>
 					<div class="4u 12u(mobile)">
 						<article class="box style2">
-							<a href="#SNS_UI" class="image featured"><img src="images/SNS_WEB_UI.png" alt="" /></a>
-							<h3><a href="#SNS_UI">SNS: l'interface Web</a></h3>
+							<a href="#SNS_UI" class="image featured">
+								<img src="images/SNS_WEB_UI.png" alt="" />
+							</a>
+							<h3>
+								<a href="#SNS_UI">SNS: l'interface Web</a>
+							</h3>
 							<p>De l'interface d'ancienne génération à la nouvelle</p>
 						</article>
 					</div>
@@ -233,9 +265,21 @@
 						<hr />
 						<h3>Trouvez moi sur ...</h3>
 						<ul class="social">
-							<li><a href="https://www.linkedin.com/in/sebastien-dolard/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/sdolard" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://twitter.com/sdolard" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li>
+								<a href="https://www.linkedin.com/in/sebastien-dolard/" class="icon fa-linkedin">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/sdolard" class="icon fa-github">
+									<span class="label">Github</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/sdolard" class="icon fa-twitter">
+									<span class="label">Twitter</span>
+								</a>
+							</li>
 							<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
 							<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 							<!-- <li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
@@ -259,7 +303,9 @@
 			<footer>
 				<ul id="copyright">
 					<li>&copy; Sébastien Dolard. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Design:
+						<a href="http://html5up.net">HTML5 UP</a>
+					</li>
 				</ul>
 			</footer>
 		</article>
