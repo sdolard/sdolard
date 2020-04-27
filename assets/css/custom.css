@@ -1,0 +1,12 @@
+h3 {
+    min-height: 73px !important;
+}
+
+
+.box {
+    min-height: 340px !important;
+}
+
+.production {
+    min-height: 550px !important;
+}
